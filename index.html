@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Exercise 02</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,800|Spectral:400,700,800" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+  <main style="position: relative; width: 100vw; height: 100vh">
+    <!-- fixed header title -->
+    <div id="header" onclick="toNextPage(-1)">
+      <div class="text">
+        matter of f-actually,
+      </div>
+    </div>
+    <!-- this is the long strip of pages -->
+    <div id="pages-container">
+      <!-- put each page in here -->
+      <!-- page 0 -->
+      <div id="page-0" class="page black">
+        <div class="content-container">
+          <div class="content">
+            <div class="initial">
+              <span>An unconvential website,<br /></span>
+              <span>subtly disrupting the way<br /></span>
+              <span>we read information…<br /></span>
+            </div>
+            <div class="secondary" style="display: none">
+              <div>Be disrupted<br /></div>
+              <div>and get rewarded.</div>
+            </div>
+          </div>
+          <!-- put button stuff here -->
+          <div class="action-row">
+            <span id="test" class="initial">a contract to Reddit</span>
+            <div id="page-one-action" onclick="toNextPage(0)" class="action-button">
+              Action here
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 1 -->
+      <div id="page-1" class="page white">
+        <div class="content-container">
+          <div class="content">
+            <span>Black</span> security guard who stops <span>shooter</span><br />
+            is then shot and <span>killed</span> by <span>police.</span>
+          </div>
+          <!-- put button stuff here -->
+          <div class="action-row">
+            <div onclick="toNextPage(1)" class="action-button">
+              Next
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 2 -->
+      <div class="page black">
+        <div class="content-container">
+          <div class="content secondary-font">
+            You read what you want to see and<br />
+            not read for what it actually is.
+          </div>
+          <!-- put button stuff here -->
+          <div class="action-row">
+            <div onclick="toNextPage(2)" class="action-button">
+              Next
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 3 -->
+      <div class="page white">
+        <div class="modal">
+          <div class="modal-content">
+            <div class="modal-text">
+              Share on Facebook,<br />
+              Twitter and Linkedin?
+            </div>
+            <div class="modal-button">
+              <div onclick="toNextPage(3)">
+                Yes, please.
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="content-container">
+          <div class="content">
+            Words build bridges<br />
+            into unexplored regions.
+          </div>
+          <!-- put button stuff here -->
+          <div class="action-row">
+            <div onclick="openModal()" class="action-button">
+              But actually ...
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 4 -->
+      <div class="page black">
+        <div class="content-container">
+          <div class="content secondary-font">
+            Inspirational, motivational and empowering…
+            is exactly what Hitler said.
+          </div>
+          <!-- put button stuff here -->
+          <div class="action-row">
+            <div onclick="toNextPage(4)" class="action-button">
+              Next
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 5 -->
+      <div class="page white">
+        <div class="content-container">
+          <div class="content">
+            NBA will consider
+            shortening games due
+            to millennial
+            attention spans.
+          </div>
+          <!-- put button stuff here -->
+          <div class="action-row">
+            <a target="_blank" href="https://www.wfaa.com/article/news/nba-will-consider-shortening-games-due-to-millennial-attention-spans/386064290">
+              <div onclick="toNextPage(5)" class="action-button">
+                But actually ...
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 6 -->
+      <div class="page black">
+        <div class="content-container">
+          <div class="content secondary-font">
+            Assumptions and attention spans,<br />
+            we are victims to our own behaviours.
+          </div>
+          <!-- put button stuff here -->
+          <div class="action-row">
+            <div onclick="toNextPage(6)" class="action-button">
+              Next
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 7 -->
+      <div class="page black">
+        <div class="content-container">
+          <div class="content secondary-font">
+            Matters of fact were indisputable, obstinate, simply there; matters of concern are disputable, and their obstinacy seems to be of an entirely different sort: they move, they carry you away, and yes, they too matter.
+          </div>
+          <!-- put button stuff here -->
+          <div class="action-row">
+            <div onclick="toNextPage(7)" class="action-button">
+              Next
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
