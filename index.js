@@ -13,8 +13,12 @@ $(document).ready(() => {
 //given the current page, go to current page + 1
 // aka, go to next page.
 const toNextPage = (currentPage) => {
+  // change header color:
   let nextPage = parseInt(currentPage) + 1;
   let pageContainerLeft = 100 * nextPage;
+  
+  let headerColor = (nextPage % 2 != 0) ? "black" : "white";
+  $("#header").css("color", headerColor);
 
   switch(nextPage) {
     case 0:
