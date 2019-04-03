@@ -24,7 +24,7 @@ const toNextPage = (currentPage) => {
   let nextPage = parseInt(currentPage) + 1;
   let pageContainerLeft = 100 * nextPage;
 
-  let headerColor = (nextPage % 2 != 0) ? "black" : "white";
+  let headerColor = (nextPage % 2 == 0 || nextPage == 7) ? "white" : "black";
   $("#header").css("color", headerColor);
 
   switch(nextPage) {
