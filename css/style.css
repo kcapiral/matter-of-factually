@@ -16,9 +16,10 @@ body, html {
   top: 100px;
   color: white;
   z-index: 100;
-  font-size: 3rem;
+  font-size: 2rem;
   transition: color 1.5s ease;
   -webkit-transition: color 1.5s ease;
+  cursor: pointer;
 }
 
 main {
@@ -61,10 +62,18 @@ main {
 }
 
 .content {
-  width: fit-content;
+  width: 800px;
   text-align: left;
   line-height: 5rem;
   /* background-color: red; */
+}
+
+.reward {
+  width: 400px;
+  margin-left: 4rem;
+  font-size: 2rem;
+  z-index: 1000;
+  /* background-color: blue; */
 }
 
 .action-row {
@@ -81,6 +90,9 @@ main {
   cursor: pointer;
   width: fit-content;
   font-size: 3rem;
+  padding: 0 1rem;
+  background-color: white;
+  color: black;
 }
 
 .secondary-font {
@@ -126,8 +138,8 @@ main {
   background-color: black;
   color: #FFFFFF;
   padding: 2rem;
-  width: 500px;
-  height: 300px;
+  margin: 2rem;
+  width: fit-content;
   position: fixed;
   left: 50%;
   top: 50%;
@@ -147,11 +159,35 @@ main {
 
 .modal-text {
   width: fit-content;
-  font-size: 2rem;
-
+  font-size: 4rem;
+  padding: 4rem;
 }
 
 .modal-button {
   width: fit-content;
   cursor: pointer;
+  background-color: white;
+  padding: 0 1rem;
+  color: black;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+.highlight {
+  background-color: black;
+  color: white;
+  text-decoration: wavy;
+  /* font-size: 8rem; */
+
+}
+
+a:link, a:visited, a:active {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: white;
+  color: black;
 }
