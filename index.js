@@ -116,7 +116,7 @@ const fourthPageFunction = () => {
   // get the html with id="page-4" and get the child that has class="content"
   let words = $("#page-4 .content").blast({delimiter: "word"});
 
-  //pass in the words, and pass in how much time between each word. 
+  //pass in the words, and pass in how much time between each word.
   fadeInWords(words, 700);
 
   setTimeout(() => $(buttons[3]).fadeIn("slow"), 5000);
